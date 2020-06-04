@@ -17,11 +17,11 @@ try {
         credentialsId: credentialsId,
         accessKeyVariable: 'AWS_ACCESS_KEY_ID',
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY',
-        echo 'inside init'
+        echo "inside init"
       ]]) {
         ansiColor('xterm') {
           sh 'terraform init',
-          echo 'inside ansi'
+          echo "inside ansi"
         }
       }
     }
@@ -35,7 +35,7 @@ try {
         credentialsId: credentialsId,
         accessKeyVariable: 'AWS_ACCESS_KEY_ID',
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY',
-        echo 'inside plan'
+        echo "inside plan"
       ]]) {
         ansiColor('xterm') {
           sh 'terraform plan'
